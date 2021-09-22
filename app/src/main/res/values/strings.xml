@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ServerConnection</string>
+    <string name="txt_serverConnection">Connection Server</string>
+    <string name="txt_Status">Status</string>
+    <string name="txt_googleServer">Google</string>
+    <string name="txt_EngageServer">Engage360</string>
+    <string name="txt_connected">Connected</string>
+    <string name="txt_failed">Failed</string>
+    <string name="txt_btnCheckServer">Check Connection</string>
+    <string name="txt_EngageMediaServer">Engage360: Media</string>
+</resources>

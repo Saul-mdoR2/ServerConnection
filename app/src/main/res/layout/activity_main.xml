@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingTop="25dp"
+    android:paddingEnd="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvConnectionServerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_serverConnection"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_Status"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/tvConnectionServerTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvServerGoogleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_googleServer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvConnectionServerTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvConnectionServerTitle" />
+
+    <TextView
+        android:id="@+id/tvServerGoogleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvStatusTitle"
+        app:layout_constraintStart_toStartOf="@id/tvStatusTitle"
+        app:layout_constraintTop_toTopOf="@id/tvServerGoogleTitle"
+        tools:text="Connected" />
+
+    <TextView
+        android:id="@+id/tvServerEngageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_EngageServer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvConnectionServerTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvServerGoogleTitle" />
+
+    <TextView
+        android:id="@+id/tvServerEngageStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvStatusTitle"
+        app:layout_constraintStart_toStartOf="@id/tvStatusTitle"
+        app:layout_constraintTop_toTopOf="@id/tvServerEngageTitle"
+        tools:text="Failed" />
+
+    <TextView
+        android:id="@+id/tvServerEngageMediaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_EngageMediaServer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvServerEngageTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvServerEngageTitle" />
+
+    <TextView
+        android:id="@+id/tvServerEngageMediaStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tvStatusTitle"
+        app:layout_constraintStart_toStartOf="@id/tvStatusTitle"
+        app:layout_constraintTop_toTopOf="@id/tvServerEngageMediaTitle"
+        tools:text="Failed" />
+
+    <Button
+        android:id="@+id/btnValidateConnection"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#012E67"
+        android:text="@string/txt_btnCheckServer"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvServerEngageMediaTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

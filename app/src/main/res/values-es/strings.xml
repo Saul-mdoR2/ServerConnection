@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ServerConnection</string>
+    <string name="txt_serverConnection">Servidor</string>
+    <string name="txt_Status">Estado</string>
+    <string name="txt_googleServer">Google</string>
+    <string name="txt_EngageServer">Engage360</string>
+    <string name="txt_connected">Conectado</string>
+    <string name="txt_failed">Desconectado</string>
+    <string name="txt_btnCheckServer">Verificar Conexión</string>
+    <string name="txt_EngageMediaServer">Engage360: Media</string>
+</resources>
